@@ -1,0 +1,38 @@
+/*
+Colors:
+Background: #051622
+Blue: #1ba098
+Accent: #FAF2C1
+*/
+
+body  {
+    background-color: #051622;  
+    margin: 0;
+    padding: 0; 
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.header {
+    display: flex;
+    background-color: #1ba098 ;
+    justify-content: center;
+    width: 100%;
+}
+
+.header > img {
+    height: 50px;
+    padding-top: 8px;
+    padding-right: 3px;
+}
+
+.header > p {
+    font-family: 'Open Sans', sans-serif;
+    color: #FAF2C1;
+    font-size: 20px;
+}
+
+.hardwareContainer {
+    width: 80%;
+    background-color: white;
+    margin: auto;
+}
