@@ -33,6 +33,7 @@ body  {
 
 .hardwareContainer {
     width: 80%;
-    background-color: white;
+    background-color: #FAF2C1;
     margin: auto;
+    margin-top: 10px;
 }
