@@ -37,3 +37,12 @@ body  {
     margin: auto;
     margin-top: 10px;
 }
+
+.hardwareGrid {
+    display: grid;
+    /* grid-template-columns: ; */
+}
+
+.hardwareItem {
+    
+}

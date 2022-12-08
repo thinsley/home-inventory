@@ -19,7 +19,6 @@ A web app to keep track of my software and hardware inventory
 - Model
 - Type
 - Serial Number
-- Quantity
 - Location
 - In Use
 - Date acquired
