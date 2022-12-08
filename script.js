@@ -7,12 +7,70 @@ function printInventory() {
     const hardwareGrid = document.querySelector(".hardwareGrid");
     const hardwareList = document.querySelector(".hardwareList");
     storageLength = localStorage.length;
-    for(let i=0; i<storageLength; i++) {
-        const hardwareItem = document.createElement("li");
-        hardwareItem.classList.add("hardwareItem");
-        hardwareItem.textContent = localStorage.getItem(localStorage.key(i));
-        // console.log(localStorage.getItem(localStorage.key(i)));
-        hardwareList.appendChild(hardwareItem);
+
+    for (let i = 0; i < storageLength; i++) {
+        currentHardware = JSON.parse(localStorage.getItem(localStorage.key(i)));
+
+        //Key
+        const hardwareKey = document.createElement("p");
+        hardwareKey.classList.add("hardwareItem");
+        hardwareKey.textContent = i+1;
+        hardwareGrid.appendChild(hardwareKey);
+
+        //Name
+        const hardwareName = document.createElement("p");
+        hardwareName.classList.add("hardwareItem");
+        hardwareName.textContent = currentHardware.name;
+        hardwareGrid.appendChild(hardwareName);
+
+        //Model
+        const hardwareModel = document.createElement("p");
+        hardwareModel.classList.add("hardwareItem");
+        hardwareModel.textContent = currentHardware.model;
+        hardwareGrid.appendChild(hardwareModel);
+
+        //Type
+        const hardwareType = document.createElement("p");
+        hardwareType.classList.add("hardwareItem");
+        hardwareType.textContent = currentHardware.type;
+        hardwareGrid.appendChild(hardwareType);
+
+        //Serial Number
+        const hardwareSerialNumber = document.createElement("p");
+        hardwareSerialNumber.classList.add("hardwareItem");
+        hardwareSerialNumber.textContent = currentHardware.serialNumber;
+        hardwareGrid.appendChild(hardwareSerialNumber);
+
+        //Location
+        const hardwareLocation = document.createElement("p");
+        hardwareLocation.classList.add("hardwareItem");
+        hardwareLocation.textContent = currentHardware.location;
+        hardwareGrid.appendChild(hardwareLocation);
+
+        //In Use
+        const hardwareInUse = document.createElement("p");
+        hardwareInUse.classList.add("hardwareItem");
+        hardwareInUse.textContent = currentHardware.inUse;
+        hardwareGrid.appendChild(hardwareInUse);
+
+        //Date Acquired
+        const hardwareDateAcquired = document.createElement("p");
+        hardwareDateAcquired.classList.add("hardwareItem");
+        hardwareDateAcquired.textContent = currentHardware.dateAcquired;
+        hardwareGrid.appendChild(hardwareDateAcquired);
+
+        //Cost
+        const hardwareCost = document.createElement("p");
+        hardwareCost.classList.add("hardwareItem");
+        hardwareCost.textContent = currentHardware.cost;
+        hardwareGrid.appendChild(hardwareCost);
+
+        //Notes
+        const hardwareNotes = document.createElement("p");
+        hardwareNotes.classList.add("hardwareItem");
+        hardwareNotes.textContent = currentHardware.notes;
+        hardwareGrid.appendChild(hardwareNotes);
+
     }
 }
 
@@ -26,7 +84,7 @@ function hardwareComponent(name, model, type, serialNumber, location, inUse, dat
     this.inUse = inUse;
     this.dateAcquired = dateAcquired;
     this.cost = cost;
-    this.notes = notes; 
+    this.notes = notes;
 }
 
 //Dummy test data
@@ -38,4 +96,3 @@ printInventory();
 // console.log(toppingL50);
 // console.log(localStorage.getItem("toppingL50"));
 
- 
