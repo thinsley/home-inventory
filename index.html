@@ -27,8 +27,40 @@
             <p class="gridHeading">Cost</p>
             <p class="gridHeading">Notes</p>
         </div>
-    </div>
+        <button class="addNewItem">Add new asset</button>
+        <form class="newItemForm hidden">
 
+            <label for="name" class="label  ">Name</label>
+            <input type="text" name="name" id="name">
+            
+            <label for="model" class="label  ">Model</label>
+            <input type="text" name="model" id="model">
+
+            <label for="type" class="label  ">Type</label>
+            <input type="text" name="type" id="type">
+
+            <label for="serialNumber" class="label  ">Serial Number</label>
+            <input type="text" name="serialNumber" id="serialNumber">
+
+            <label for="location" class="label  ">Location</label>
+            <input type="text" name="location" id="location">
+
+            <label for="inUse" class="label  ">In Use</label>
+            <input type="text" name="inUse" id="inUse">
+
+            <label for="dateAcquired" class="label  ">Date Acquired</label>
+            <input type="date" name="dateAcquired" id="dateAcquired">
+
+            <label for="cost" class="label  ">Cost</label>
+            <input type="text" name="cost" id="cost">
+
+            <label for="notes" class="label  ">Notes</label>
+            <input type="text" name="notes" id="notes">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
