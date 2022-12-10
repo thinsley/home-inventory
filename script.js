@@ -92,7 +92,7 @@ function hardwareComponent(name, model, type, serialNumber, location, inUse, dat
 
 function addNewHardwareComponent() {
     const newItemForm = document.querySelector(".newItemForm");
-    newItemForm.removeAttribute("class", "hidden");
+    newItemForm.classList.remove("hidden");
 
     const submitButton = document.querySelector(".submitButton");
     submitButton.addEventListener("click", function submitFunction() {

@@ -27,16 +27,17 @@ body  {
 
 .header > p {
     font-family: 'Open Sans', sans-serif;
-    color: #FAF2C1;
+    color: #fffcea;
     font-size: 20px;
 }
 
-.hardwareContainer {
+.center {
     width: 90%;
     background-color: #fff9d0;
     margin: auto;
     margin-top: 10px;
 }
+
 
 .hardwareTitle {
     font-size: 24px;
@@ -68,4 +69,24 @@ body  {
 
 .hidden {
     visibility: collapse;
+}
+
+.newItemForm {
+    width: 60%;
+    text-align: right;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1em;
+    row-gap: .5em;
+    padding-bottom: 20px;
+}
+
+input:required {
+    border: 1px solid red;
+    border-radius: 2px;
+}
+
+.newItemForm > * {
+
 }
