@@ -90,6 +90,12 @@ function addNewHardwareComponent() {
     const newItemForm = document.querySelector(".newItemForm");
     newItemForm.removeAttribute("class", "hidden");
 
+    const submitButton = document.querySelector(".submitButton");
+    submitButton.addEventListener("click", function submitFunction() {
+        let nameValue = document.getElementById("name").value;
+        console.log(nameValue);
+    });
+
     // const newNameLabel = document.createElement("label");
     // newNameLabel.setAttribute("for", "name");
     // newNameLabel.setAttribute("class", "formLabel");
